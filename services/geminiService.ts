@@ -3,8 +3,14 @@ import { GoogleGenAI } from "@google/genai";
 
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
+console.log("Environment check:", {
+    hasKey: !!API_KEY,
+    keyPrefix: API_KEY ? API_KEY.substring(0, 10) + "..." : "MISSING",
+    allEnvVars: import.meta.env
+});
+
 if (!API_KEY) {
-    throw new Error("VITE_GEMINI_API_KEY environment variable is not set.");
+    throw new Error("VITE_GEMINI_API_KEY environment variable is not set. Check your .env.local file.");
 }
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
