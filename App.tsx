@@ -85,16 +85,16 @@ function App() {
                 <button
                   onClick={handleGetAnswer}
                   disabled={state.isLoading}
-                  className="glow-button px-6 py-3 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 text-white font-semibold rounded-lg shadow-lg hover:from-purple-600 hover:via-blue-600 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                  className="glow-button px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-xl shadow-xl hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-105"
                 >
-                  {state.isLoading ? 'Thinking...' : 'Get Answer'}
+                  {state.isLoading ? '🤔 Thinking...' : '✨ Get Answer'}
                 </button>
                 <button
                   onClick={handleReset}
                   disabled={state.isLoading}
-                  className="px-6 py-3 glass-effect text-white font-semibold rounded-lg shadow-lg hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                  className="px-8 py-4 glass-effect text-blue-100 font-bold rounded-xl shadow-xl hover:bg-blue-900/40 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-105"
                 >
-                  Start Over
+                  🔄 Start Over
                 </button>
               </div>
             </div>
