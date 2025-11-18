@@ -4,11 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Reasoning Agent</title>
+    <title>QwizAI - Master Every Question</title>
+    <link rel="icon" type="image/png" href="/newlogo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 25px rgba(0, 212, 255, 0.6); }
+        50% { box-shadow: 0 0 50px rgba(64, 224, 208, 0.8); }
+      }
+
+      @keyframes shimmer {
+        0% { background-position: -200% center; }
+        100% { background-position: 200% center; }
+      }
+
       body {
-        background-color: #111827; /* bg-gray-900 */
+        background: linear-gradient(-45deg, #0a1929, #1a237e, #1e3a8a, #0f2847);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        min-height: 100vh;
+      }
+
+      .fade-in {
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+
+      .glow-button:hover {
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+
+      .glass-effect {
+        background: rgba(15, 40, 71, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 212, 255, 0.2);
+      }
+
+      .shimmer {
+        background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
+        background-size: 200% 100%;
+        animation: shimmer 3s infinite;
       }
     </style>
 <script type="importmap">

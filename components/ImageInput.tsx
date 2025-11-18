@@ -37,7 +37,7 @@ export const ImageInput: React.FC<ImageInputProps> = ({ onImageSelect, onOpenCam
     };
 
     return (
-        <div className="w-full p-8 border-2 border-dashed border-gray-600 rounded-2xl bg-gray-800/50 flex flex-col items-center justify-center text-center">
+        <div className="w-full p-8 border-2 border-dashed rounded-2xl glass-effect flex flex-col items-center justify-center text-center">
             <input
                 type="file"
                 ref={fileInputRef}
@@ -46,19 +46,19 @@ export const ImageInput: React.FC<ImageInputProps> = ({ onImageSelect, onOpenCam
                 accept="image/*"
             />
             <div className="space-y-6">
-                 <h2 className="text-2xl font-bold text-gray-200">Provide an Image</h2>
-                 <p className="text-gray-400">Upload a file or use your camera to get started.</p>
+                 <h2 className="text-2xl font-bold text-cyan-300">Provide an Image</h2>
+                 <p className="text-gray-300">Upload a file or use your camera to get started.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button
                         onClick={handleUploadClick}
-                        className="flex items-center justify-center gap-3 px-6 py-3 bg-gray-700 text-white font-semibold rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 transition-colors"
+                        className="glow-button flex items-center justify-center gap-3 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:from-cyan-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75 transition-all"
                     >
                         <UploadIcon />
                         Upload Image
                     </button>
                     <button
                         onClick={onOpenCamera}
-                        className="flex items-center justify-center gap-3 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition-colors"
+                        className="glow-button flex items-center justify-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all"
                     >
                         <CameraIcon />
                         Use Camera

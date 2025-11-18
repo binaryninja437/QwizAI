@@ -60,7 +60,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 flex flex-col items-center p-4 sm:p-6 lg:p-8 font-sans">
+    <div className="min-h-screen text-gray-100 flex flex-col items-center p-4 sm:p-6 lg:p-8 font-sans fade-in">
       <div className="w-full max-w-3xl mx-auto">
         <Header />
         <main className="mt-8">
@@ -85,14 +85,14 @@ function App() {
                 <button
                   onClick={handleGetAnswer}
                   disabled={state.isLoading}
-                  className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 disabled:bg-blue-400 disabled:cursor-not-allowed transition-colors"
+                  className="glow-button px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:from-cyan-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                 >
                   {state.isLoading ? 'Thinking...' : 'Get Answer'}
                 </button>
                 <button
                   onClick={handleReset}
                   disabled={state.isLoading}
-                  className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 disabled:bg-gray-500 disabled:cursor-not-allowed transition-colors"
+                  className="px-6 py-3 glass-effect text-white font-semibold rounded-lg shadow-lg hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                 >
                   Start Over
                 </button>
