@@ -46,19 +46,19 @@ export const ImageInput: React.FC<ImageInputProps> = ({ onImageSelect, onOpenCam
                 accept="image/*"
             />
             <div className="space-y-6">
-                 <h2 className="text-2xl font-bold text-cyan-300">Provide an Image</h2>
-                 <p className="text-gray-300">Upload a file or use your camera to get started.</p>
+                 <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-blue-300 to-cyan-300">Provide an Image</h2>
+                 <p className="text-gray-200">Upload a file or use your camera to get started.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button
                         onClick={handleUploadClick}
-                        className="glow-button flex items-center justify-center gap-3 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:from-cyan-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-75 transition-all"
+                        className="glow-button flex items-center justify-center gap-3 px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:from-purple-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75 transition-all"
                     >
                         <UploadIcon />
                         Upload Image
                     </button>
                     <button
                         onClick={onOpenCamera}
-                        className="glow-button flex items-center justify-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all"
+                        className="glow-button flex items-center justify-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-lg shadow-lg hover:from-blue-600 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all"
                     >
                         <CameraIcon />
                         Use Camera

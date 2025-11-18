@@ -20,8 +20,8 @@
       }
 
       @keyframes pulse-glow {
-        0%, 100% { box-shadow: 0 0 25px rgba(0, 212, 255, 0.6); }
-        50% { box-shadow: 0 0 50px rgba(64, 224, 208, 0.8); }
+        0%, 100% { box-shadow: 0 0 25px rgba(147, 51, 234, 0.6), 0 0 50px rgba(59, 130, 246, 0.4); }
+        50% { box-shadow: 0 0 50px rgba(168, 85, 247, 0.8), 0 0 75px rgba(96, 165, 250, 0.6); }
       }
 
       @keyframes shimmer {
@@ -30,7 +30,7 @@
       }
 
       body {
-        background: linear-gradient(-45deg, #0a1929, #1a237e, #1e3a8a, #0f2847);
+        background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1a1a3e, #3a1c71, #0f2847);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         min-height: 100vh;
@@ -45,13 +45,13 @@
       }
 
       .glass-effect {
-        background: rgba(15, 40, 71, 0.6);
+        background: rgba(30, 20, 60, 0.5);
         backdrop-filter: blur(12px);
-        border: 1px solid rgba(0, 212, 255, 0.2);
+        border: 1px solid rgba(147, 51, 234, 0.3);
       }
 
       .shimmer {
-        background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
+        background: linear-gradient(90deg, transparent, rgba(147, 51, 234, 0.4), rgba(59, 130, 246, 0.4), transparent);
         background-size: 200% 100%;
         animation: shimmer 3s infinite;
       }

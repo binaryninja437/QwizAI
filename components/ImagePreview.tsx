@@ -7,7 +7,7 @@ interface ImagePreviewProps {
 
 export const ImagePreview: React.FC<ImagePreviewProps> = ({ imageSrc }) => {
     return (
-        <div className="w-full max-w-md mx-auto glass-effect p-3 rounded-lg shadow-xl border-2 border-cyan-500/30">
+        <div className="w-full max-w-md mx-auto glass-effect p-3 rounded-lg shadow-xl border-2 border-purple-500/40">
             <img
                 src={imageSrc}
                 alt="Selected"
