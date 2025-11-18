@@ -7,7 +7,7 @@ export const Header: React.FC = () => {
             <div className="mb-8">
                 <div className="inline-block bg-white p-4 rounded-3xl shadow-2xl">
                     <img
-                        src="newlogo.png"
+                        src="/newlogo.png"
                         alt="QwizAI"
                         className="h-28 w-auto mx-auto"
                     />
